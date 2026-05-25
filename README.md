@@ -5,8 +5,6 @@ A modern, editorial-style academic homepage. Built with plain HTML, CSS, and a t
 ---
 
 ## What's in here1
-test commit from vs code test 123 test 123
-
 ```
 site/
 ├── index.html              ← Home (hero, research, updates, recruit CTA)
