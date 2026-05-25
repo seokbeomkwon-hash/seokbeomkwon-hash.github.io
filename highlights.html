@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Highlights &middot; Seokbeom Kwon</title>
+<meta name="description" content="Visualized summaries of Seokbeom Kwon's featured publications on data policy, government research support, antitrust, and emerging technology.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2XVXZM9NM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2XVXZM9NM');
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="dot"></span>Seokbeom Kwon</a>
+    <nav class="primary" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="highlights.html">Highlights</a>
+      <a href="publications.html">Publications</a>
+      <a href="students.html">Students</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="page-head reveal">
+    <p class="crumb">Research Highlights</p>
+    <h1>Featured work, <em>visualized</em></h1>
+    <p class="lead">
+      A graphical tour of four papers that capture what I&rsquo;ve been
+      working on &mdash; from data policy and government research support
+      to antitrust and emerging technology.
+    </p>
+  </section>
+
+
+  <!-- =========================================================
+       HIGHLIGHT 1 — Competition or Diversion (2025 Research Policy)
+       ========================================================= -->
+  <article class="highlight reveal">
+    <div class="highlight-grid">
+
+      <div class="highlight-visual">
+        <p class="vis-label">Effect of NIH mandatory data sharing on data providers</p>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Difference-in-differences result: null effect">
+          <!-- Background grid -->
+          <line x1="60" y1="60" x2="60" y2="280" stroke="#E8E5DD" stroke-width="1"/>
+          <line x1="60" y1="280" x2="460" y2="280" stroke="#E8E5DD" stroke-width="1"/>
+
+          <!-- Y-axis label -->
+          <text x="30" y="155" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" transform="rotate(-90, 30, 155)" text-anchor="middle" letter-spacing="0.08em">PRODUCTIVITY</text>
+
+          <!-- X-axis labels -->
+          <text x="160" y="305" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">BEFORE MANDATE</text>
+          <text x="360" y="305" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">AFTER MANDATE</text>
+
+          <!-- Vertical separator -->
+          <line x1="260" y1="60" x2="260" y2="280" stroke="#D4D0C4" stroke-width="1" stroke-dasharray="3,4"/>
+          <text x="260" y="50" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="middle" letter-spacing="0.08em">NIH MANDATE</text>
+
+          <!-- Control group (grey, dashed) -->
+          <polyline points="80,180 130,178 180,182 230,180" fill="none" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
+          <polyline points="290,180 340,182 390,178 440,180" fill="none" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
+
+          <!-- Treated group (blue, solid) -->
+          <polyline points="80,160 130,158 180,162 230,160" fill="none" stroke="#2147D9" stroke-width="2.5"/>
+          <polyline points="290,158 340,162 390,160 440,162" fill="none" stroke="#2147D9" stroke-width="2.5"/>
+
+          <!-- Data points -->
+          <circle cx="80" cy="160" r="4" fill="#2147D9"/>
+          <circle cx="130" cy="158" r="4" fill="#2147D9"/>
+          <circle cx="180" cy="162" r="4" fill="#2147D9"/>
+          <circle cx="230" cy="160" r="4" fill="#2147D9"/>
+          <circle cx="290" cy="158" r="4" fill="#2147D9"/>
+          <circle cx="340" cy="162" r="4" fill="#2147D9"/>
+          <circle cx="390" cy="160" r="4" fill="#2147D9"/>
+          <circle cx="440" cy="162" r="4" fill="#2147D9"/>
+
+          <!-- Legend -->
+          <line x1="80" y1="100" x2="105" y2="100" stroke="#2147D9" stroke-width="2.5"/>
+          <text x="115" y="104" font-family="Geist, sans-serif" font-size="11" fill="#161513">Data providers (mandated)</text>
+          <line x1="80" y1="120" x2="105" y2="120" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
+          <text x="115" y="124" font-family="Geist, sans-serif" font-size="11" fill="#6E6A63">Control (synthetic)</text>
+
+          <!-- Key annotation -->
+          <rect x="290" y="225" width="170" height="40" rx="6" fill="#E8EDFD" stroke="#2147D9" stroke-width="0.5"/>
+          <text x="375" y="244" font-family="Newsreader, serif" font-size="14" fill="#1933A8" text-anchor="middle" font-weight="500">No negative effect</text>
+          <text x="375" y="258" font-family="'Geist Mono', monospace" font-size="9" fill="#1933A8" text-anchor="middle" letter-spacing="0.05em">DID + SYNTHETIC CONTROL</text>
+        </svg>
+      </div>
+
+      <div class="highlight-content">
+        <div class="venue-line">
+          <span class="venue-badge tier-1">Research Policy</span>
+          <span class="meta-text">2025 &middot; 54(9): 105308 &middot; Solo-authored</span>
+        </div>
+        <h2>Competition or Diversion? Effect of Public Sharing of Data on Research Productivity of Data Provider</h2>
+        <p class="question">
+          Scientists worry that publicly disclosing research data hurts their own publication opportunities &mdash; rivals can race ahead with the same data. But the empirical evidence has been mixed. Does mandatory data sharing actually penalize the original team?
+        </p>
+        <ul class="findings">
+          <li>
+            <span class="label">Setting</span>
+            <span class="value">NIH mandate to share data via dbGaP archive</span>
+          </li>
+          <li>
+            <span class="label">Method</span>
+            <span class="value">Panel DID + synthetic control on data providers vs matched controls</span>
+          </li>
+          <li>
+            <span class="label">Finding</span>
+            <span class="value"><strong>No negative impact</strong> on data providers&rsquo; research productivity</span>
+          </li>
+          <li>
+            <span class="label">Why</span>
+            <span class="value">Data recipients pursue research questions <em>distant</em> from providers&rsquo; &mdash; <strong>diversion dominates competition</strong></span>
+          </li>
+          <li>
+            <span class="label">Implication</span>
+            <span class="value">Sustainable data-sharing policies can be designed without penalizing original teams</span>
+          </li>
+        </ul>
+        <div class="paper-links">
+          <a href="https://authors.elsevier.com/a/1lZbhB5ASXeAU" target="_blank" rel="noopener">Read paper &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- =========================================================
+       HIGHLIGHT 2 — Government Research Support (2024 Science)
+       ========================================================= -->
+  <article class="highlight reveal">
+    <div class="highlight-grid">
+
+      <div class="highlight-visual">
+        <p class="vis-label">US patent-paper pairs: govt acknowledgment</p>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="28 percent of patents do not acknowledge government support">
+          <!-- Donut chart -->
+          <g transform="translate(165, 175)">
+            <!-- Background donut (acknowledged - 72%) -->
+            <circle cx="0" cy="0" r="100" fill="none" stroke="#E8E5DD" stroke-width="32"/>
+            <!-- Highlighted slice (NOT acknowledged - 28%) -->
+            <!-- 28% of 360 = 100.8 deg -->
+            <circle cx="0" cy="0" r="100" fill="none" stroke="#2147D9" stroke-width="32"
+              stroke-dasharray="175.93 628.32" stroke-dashoffset="0"
+              transform="rotate(-90)" stroke-linecap="butt"/>
+
+            <!-- Center label -->
+            <text x="0" y="-4" font-family="Newsreader, serif" font-size="46" fill="#2147D9" text-anchor="middle" font-weight="600" font-variation-settings="'opsz' 60">28%</text>
+            <text x="0" y="22" font-family="'Geist Mono', monospace" font-size="9" fill="#6E6A63" text-anchor="middle" letter-spacing="0.08em">UNDISCLOSED</text>
+          </g>
+
+          <!-- Side annotations -->
+          <g transform="translate(300, 100)">
+            <rect x="0" y="0" width="14" height="14" fill="#2147D9" rx="2"/>
+            <text x="22" y="11" font-family="Geist, sans-serif" font-size="12" fill="#161513" font-weight="500">28% — federal support hidden</text>
+            <text x="22" y="28" font-family="Geist, sans-serif" font-size="11" fill="#6E6A63">in patent records</text>
+          </g>
+
+          <g transform="translate(300, 160)">
+            <rect x="0" y="0" width="14" height="14" fill="#E8E5DD" rx="2"/>
+            <text x="22" y="11" font-family="Geist, sans-serif" font-size="12" fill="#161513" font-weight="500">72% — properly acknowledged</text>
+          </g>
+
+          <!-- Footer stat -->
+          <g transform="translate(165, 320)">
+            <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="11" fill="#6E6A63" text-anchor="middle" letter-spacing="0.08em">~84,000 US PATENT-PAPER PAIRS ANALYZED</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="highlight-content">
+        <div class="venue-line">
+          <span class="venue-badge tier-1">Science</span>
+          <span class="meta-text">2024 &middot; 385(6712): 936–938 &middot; Solo-authored</span>
+        </div>
+        <h2>Underappreciated Government Research Support in Patents</h2>
+        <p class="question">
+          Federally funded research drives a huge share of US innovation. But when patents fail to acknowledge that government support, the public loses twice: government&rsquo;s contribution is underestimated, and its right to exercise patents for public health or safety is undermined.
+        </p>
+        <ul class="findings">
+          <li>
+            <span class="label">Data</span>
+            <span class="value">~84,000 US patent-paper pairs (PPPs) linking research outcomes to patents</span>
+          </li>
+          <li>
+            <span class="label">Finding</span>
+            <span class="value"><strong>28%</strong> of patents on federally-funded research outcomes did <strong>not acknowledge</strong> the US government&rsquo;s support</span>
+          </li>
+          <li>
+            <span class="label">Implication</span>
+            <span class="value">Government&rsquo;s role in innovation is systematically underestimated; potential public-interest exercise of patent rights is weakened</span>
+          </li>
+          <li>
+            <span class="label">Open data</span>
+            <span class="value">Replication dataset available on Dryad</span>
+          </li>
+        </ul>
+        <div class="paper-links">
+          <a href="https://www.science.org/doi/10.1126/science.ado1078" target="_blank" rel="noopener">Read paper &rarr;</a>
+          <a href="https://doi.org/10.5061/dryad.18931zd4h" target="_blank" rel="noopener">Dataset</a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- =========================================================
+       HIGHLIGHT 3 — Antitrust & Innovation (2021 Research Policy)
+       ========================================================= -->
+  <article class="highlight reveal">
+    <div class="highlight-grid">
+
+      <div class="highlight-visual">
+        <p class="vis-label">2011 DOJ intervention: Novell patent transfer</p>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Antitrust intervention diagram">
+
+          <!-- Novell source box -->
+          <rect x="180" y="40" width="140" height="44" rx="6" fill="#FBFAF7" stroke="#161513" stroke-width="1"/>
+          <text x="250" y="60" font-family="Newsreader, serif" font-size="14" fill="#161513" text-anchor="middle" font-weight="500">Novell patents</text>
+          <text x="250" y="75" font-family="'Geist Mono', monospace" font-size="9" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">SOFTWARE PORTFOLIO</text>
+
+          <!-- DOJ intervention badge -->
+          <g transform="translate(360, 105)">
+            <rect x="0" y="0" width="100" height="32" rx="16" fill="#2147D9"/>
+            <text x="50" y="20" font-family="'Geist Mono', monospace" font-size="10" fill="#fff" text-anchor="middle" font-weight="600" letter-spacing="0.08em">DOJ 2011</text>
+          </g>
+
+          <!-- Arrow with red X (blocked transfer) -->
+          <line x1="250" y1="90" x2="250" y2="135" stroke="#161513" stroke-width="1.5"/>
+          <g transform="translate(250, 145)">
+            <circle cx="0" cy="0" r="18" fill="#fff" stroke="#DC3838" stroke-width="2"/>
+            <line x1="-9" y1="-9" x2="9" y2="9" stroke="#DC3838" stroke-width="2.5"/>
+            <line x1="-9" y1="9" x2="9" y2="-9" stroke="#DC3838" stroke-width="2.5"/>
+          </g>
+          <text x="285" y="150" font-family="'Geist Mono', monospace" font-size="10" fill="#DC3838" font-weight="600" letter-spacing="0.05em">CONSOLIDATION BLOCKED</text>
+
+          <!-- 4 acquirers (greyed out) -->
+          <line x1="250" y1="163" x2="250" y2="180" stroke="#A09C92" stroke-width="1" stroke-dasharray="2,3"/>
+          <g transform="translate(80, 185)">
+            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
+            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Microsoft</text>
+          </g>
+          <g transform="translate(180, 185)">
+            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
+            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Oracle</text>
+          </g>
+          <g transform="translate(280, 185)">
+            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
+            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">EMC</text>
+          </g>
+          <g transform="translate(380, 185)">
+            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
+            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Apple</text>
+          </g>
+
+          <!-- Outcome arrow -->
+          <line x1="250" y1="235" x2="250" y2="265" stroke="#2147D9" stroke-width="2"/>
+          <polygon points="250,275 244,265 256,265" fill="#2147D9"/>
+
+          <!-- Outcome result -->
+          <rect x="80" y="285" width="340" height="50" rx="8" fill="#E8EDFD" stroke="#2147D9" stroke-width="0.5"/>
+          <text x="250" y="307" font-family="Newsreader, serif" font-size="15" fill="#1933A8" text-anchor="middle" font-weight="500">Competitors&rsquo; follow-on innovation ↑</text>
+          <text x="250" y="324" font-family="'Geist Mono', monospace" font-size="10" fill="#1933A8" text-anchor="middle" letter-spacing="0.05em">SYNTHETIC CONTROL EVIDENCE</text>
+        </svg>
+      </div>
+
+      <div class="highlight-content">
+        <div class="venue-line">
+          <span class="venue-badge tier-1">Research Policy</span>
+          <span class="meta-text">2021 &middot; 50(9): 104295 &middot; with A. Marco</span>
+        </div>
+        <h2>Can antitrust law enforcement spur innovation? Antitrust regulation of patent consolidation and its impact on follow-on innovations</h2>
+        <p class="question">
+          When a firm consolidates patents covering substitute technologies, it can choke off competitors&rsquo; follow-on innovation. Can antitrust law &mdash; usually framed in terms of consumer prices &mdash; serve as a tool for innovation policy?
+        </p>
+        <ul class="findings">
+          <li>
+            <span class="label">Case</span>
+            <span class="value">2011 US DOJ regulation blocking transfer of Novell&rsquo;s software patents to Microsoft, Oracle, EMC, Apple</span>
+          </li>
+          <li>
+            <span class="label">Data</span>
+            <span class="value">US patent, trademark, and copyright records</span>
+          </li>
+          <li>
+            <span class="label">Finding</span>
+            <span class="value">Antitrust intervention <strong>increased</strong> competitors&rsquo; follow-on innovation</span>
+          </li>
+          <li>
+            <span class="label">Implication</span>
+            <span class="value">Antitrust law can be a <strong>complement</strong> to patent law in promoting innovation, not just a constraint on monopoly</span>
+          </li>
+        </ul>
+        <div class="paper-links">
+          <a href="https://authors.elsevier.com/a/1dBlBB5ASINW2" target="_blank" rel="noopener">Read paper &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- =========================================================
+       HIGHLIGHT 4 — Emerging Technological Ideas (2019 Research Policy)
+       ========================================================= -->
+  <article class="highlight reveal">
+    <div class="highlight-grid">
+
+      <div class="highlight-visual">
+        <p class="vis-label">Emerging tech content vs citation impact</p>
+        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Positive relationship between emerging ideas and citation impact">
+
+          <!-- Axes -->
+          <line x1="60" y1="60" x2="60" y2="290" stroke="#161513" stroke-width="1"/>
+          <line x1="60" y1="290" x2="460" y2="290" stroke="#161513" stroke-width="1"/>
+
+          <!-- Axis labels -->
+          <text x="35" y="175" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" transform="rotate(-90, 35, 175)" text-anchor="middle" letter-spacing="0.08em">CITATION IMPACT</text>
+          <text x="260" y="315" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.08em">EMERGING IDEA CONTENT &rarr;</text>
+
+          <!-- Tick marks Y -->
+          <line x1="55" y1="250" x2="60" y2="250" stroke="#6E6A63" stroke-width="0.5"/>
+          <text x="50" y="254" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="end">low</text>
+          <line x1="55" y1="100" x2="60" y2="100" stroke="#6E6A63" stroke-width="0.5"/>
+          <text x="50" y="104" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="end">high</text>
+
+          <!-- Data scatter points + trend (Nano-Enabled Drug Delivery) -->
+          <circle cx="95" cy="252" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="125" cy="240" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="155" cy="225" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="185" cy="210" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="215" cy="195" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="245" cy="178" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="275" cy="160" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="305" cy="148" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="335" cy="135" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="365" cy="118" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="395" cy="103" r="4" fill="#2147D9" fill-opacity="0.7"/>
+          <circle cx="425" cy="92" r="4" fill="#2147D9" fill-opacity="0.7"/>
+
+          <!-- Trend line -->
+          <line x1="80" y1="260" x2="440" y2="85" stroke="#2147D9" stroke-width="2" stroke-dasharray="0"/>
+
+          <!-- Three domains tag -->
+          <g transform="translate(85, 80)">
+            <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" fill="#6E6A63" letter-spacing="0.08em">DOMAINS ANALYZED:</text>
+            <text x="0" y="16" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Nano-enabled drug delivery</text>
+            <text x="0" y="30" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Synthetic biology</text>
+            <text x="0" y="44" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Autonomous vehicles</text>
+          </g>
+
+        </svg>
+      </div>
+
+      <div class="highlight-content">
+        <div class="venue-line">
+          <span class="venue-badge tier-1">Research Policy</span>
+          <span class="meta-text">2019 &middot; 48(9): 103834 &middot; with X. Liu, A. Porter, J. Youtie</span>
+        </div>
+        <h2>Research Addressing Emerging Technological Ideas Has Greater Scientific Impact</h2>
+        <p class="question">
+          Funders, journals, and labs all face the same gamble: invest in the new and unproven, or stick with established lines. Does engaging with emerging ideas actually pay off in scientific impact?
+        </p>
+        <ul class="findings">
+          <li>
+            <span class="label">Domains</span>
+            <span class="value">Nano-enabled drug delivery, synthetic biology, autonomous vehicles</span>
+          </li>
+          <li>
+            <span class="label">Method</span>
+            <span class="value">Bibliometric indicators detecting emerging terms in titles + abstracts; regression on future citations</span>
+          </li>
+          <li>
+            <span class="label">Finding</span>
+            <span class="value">Papers containing <strong>more emerging ideas</strong> received <strong>more citations</strong> &mdash; both within and across fields</span>
+          </li>
+          <li>
+            <span class="label">Implication</span>
+            <span class="value">Engaging with technological emergence is associated with broader scientific influence, not just niche relevance</span>
+          </li>
+        </ul>
+        <div class="paper-links">
+          <a href="https://doi.org/10.1016/j.respol.2019.103834" target="_blank" rel="noopener">Read paper &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- =========================================================
+       CTA — see more
+       ========================================================= -->
+  <section class="section reveal" style="border-top: 0.5px solid var(--line);">
+    <div style="text-align: center; padding: 2rem 0;">
+      <p class="lead" style="margin: 0 auto 1.25rem;">
+        These are four highlights from 30 peer-reviewed articles. For the complete list, see all publications.
+      </p>
+      <a class="btn btn-primary" href="publications.html">
+        View all publications
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <div>
+      <h4>Contact</h4>
+      <p><a href="mailto:seokbeom.kwon@kaist.ac.kr">seokbeom.kwon@kaist.ac.kr</a></p>
+      <p>KAIST BTM, Daejeon, South Korea</p>
+    </div>
+    <div>
+      <h4>Elsewhere</h4>
+      <p><a href="https://scholar.google.com/citations?user=FsFPBBQAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+      <p><a href="https://drive.google.com/file/d/1EOTJhUqzAvCsHdVYnTJ0YkAzeVFCT2wv/view?usp=drive_link" target="_blank" rel="noopener">Curriculum Vitae</a></p>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <p><a href="research.html">Research</a></p>
+      <p><a href="publications.html">Publications</a></p>
+      <p><a href="students.html">For prospective students</a></p>
+    </div>
+  </div>
+  <div class="colophon">
+    <span>&copy; <span id="year">2026</span> Seokbeom Kwon</span>
+    <span>KAIST &middot; School of Business and Technology Management</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
