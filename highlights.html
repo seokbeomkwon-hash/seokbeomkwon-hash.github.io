@@ -46,9 +46,8 @@
     <p class="crumb">Research Highlights</p>
     <h1>Featured work, <em>visualized</em></h1>
     <p class="lead">
-      A graphical tour of four papers that capture what I&rsquo;ve been
-      working on &mdash; from data policy and government research support
-      to antitrust and emerging technology.
+      A short tour of four featured papers &mdash; each with the actual
+      figures from the paper and a one-line read.
     </p>
   </section>
 
@@ -60,52 +59,30 @@
     <div class="highlight-grid">
 
       <div class="highlight-visual">
-        <p class="vis-label">Effect of NIH mandatory data sharing on data providers</p>
-        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Difference-in-differences result: null effect">
-          <!-- Background grid -->
-          <line x1="60" y1="60" x2="60" y2="280" stroke="#E8E5DD" stroke-width="1"/>
-          <line x1="60" y1="280" x2="460" y2="280" stroke="#E8E5DD" stroke-width="1"/>
+        <p class="vis-label">Event study + recipient–provider similarity</p>
 
-          <!-- Y-axis label -->
-          <text x="30" y="155" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" transform="rotate(-90, 30, 155)" text-anchor="middle" letter-spacing="0.08em">PRODUCTIVITY</text>
+        <img class="paper-fig"
+             src="assets/images/figures/fig_data_sharing_event_study.png"
+             alt="Event-study estimates showing parallel trends and null post-treatment effect"
+             loading="lazy">
+        <p class="fig-caption">
+          <strong>Event-study estimates.</strong> Productivity (Poisson) of data
+          providers vs. matched comparison group, 5 years before to 4 years
+          after data sharing. Pre-treatment trends are parallel; the post-treatment
+          trajectory shows <strong>no significant divergence</strong>.
+        </p>
 
-          <!-- X-axis labels -->
-          <text x="160" y="305" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">BEFORE MANDATE</text>
-          <text x="360" y="305" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">AFTER MANDATE</text>
-
-          <!-- Vertical separator -->
-          <line x1="260" y1="60" x2="260" y2="280" stroke="#D4D0C4" stroke-width="1" stroke-dasharray="3,4"/>
-          <text x="260" y="50" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="middle" letter-spacing="0.08em">NIH MANDATE</text>
-
-          <!-- Control group (grey, dashed) -->
-          <polyline points="80,180 130,178 180,182 230,180" fill="none" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
-          <polyline points="290,180 340,182 390,178 440,180" fill="none" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
-
-          <!-- Treated group (blue, solid) -->
-          <polyline points="80,160 130,158 180,162 230,160" fill="none" stroke="#2147D9" stroke-width="2.5"/>
-          <polyline points="290,158 340,162 390,160 440,162" fill="none" stroke="#2147D9" stroke-width="2.5"/>
-
-          <!-- Data points -->
-          <circle cx="80" cy="160" r="4" fill="#2147D9"/>
-          <circle cx="130" cy="158" r="4" fill="#2147D9"/>
-          <circle cx="180" cy="162" r="4" fill="#2147D9"/>
-          <circle cx="230" cy="160" r="4" fill="#2147D9"/>
-          <circle cx="290" cy="158" r="4" fill="#2147D9"/>
-          <circle cx="340" cy="162" r="4" fill="#2147D9"/>
-          <circle cx="390" cy="160" r="4" fill="#2147D9"/>
-          <circle cx="440" cy="162" r="4" fill="#2147D9"/>
-
-          <!-- Legend -->
-          <line x1="80" y1="100" x2="105" y2="100" stroke="#2147D9" stroke-width="2.5"/>
-          <text x="115" y="104" font-family="Geist, sans-serif" font-size="11" fill="#161513">Data providers (mandated)</text>
-          <line x1="80" y1="120" x2="105" y2="120" stroke="#A09C92" stroke-width="2" stroke-dasharray="5,3"/>
-          <text x="115" y="124" font-family="Geist, sans-serif" font-size="11" fill="#6E6A63">Control (synthetic)</text>
-
-          <!-- Key annotation -->
-          <rect x="290" y="225" width="170" height="40" rx="6" fill="#E8EDFD" stroke="#2147D9" stroke-width="0.5"/>
-          <text x="375" y="244" font-family="Newsreader, serif" font-size="14" fill="#1933A8" text-anchor="middle" font-weight="500">No negative effect</text>
-          <text x="375" y="258" font-family="'Geist Mono', monospace" font-size="9" fill="#1933A8" text-anchor="middle" letter-spacing="0.05em">DID + SYNTHETIC CONTROL</text>
-        </svg>
+        <img class="paper-fig"
+             src="assets/images/figures/fig_data_sharing_group_comparison.png"
+             alt="Bar chart comparing similarity within and across provider-recipient pairs"
+             loading="lazy">
+        <p class="fig-caption">
+          <strong>Why no penalty?</strong> Provider–recipient research pairs are
+          <strong>less similar</strong> (lower ZSimilarity, fewer shared subject
+          codes and journals) than provider–provider or recipient–recipient pairs.
+          Data recipients pursue <em>distant</em> questions, so diversion dominates
+          competition.
+        </p>
       </div>
 
       <div class="highlight-content">
@@ -115,7 +92,7 @@
         </div>
         <h2>Competition or Diversion? Effect of Public Sharing of Data on Research Productivity of Data Provider</h2>
         <p class="question">
-          Scientists worry that publicly disclosing research data hurts their own publication opportunities &mdash; rivals can race ahead with the same data. But the empirical evidence has been mixed. Does mandatory data sharing actually decrease the original data creator's research productivity?
+          Scientists worry that publicly disclosing research data hurts their own publication opportunities &mdash; rivals can race ahead with the same data. But the empirical evidence has been mixed. Does mandatory data sharing actually penalize the original team?
         </p>
         <ul class="findings">
           <li>
@@ -136,7 +113,7 @@
           </li>
           <li>
             <span class="label">Implication</span>
-            <span class="value">Sustainable data-sharing policies can be designed without harming data creators' research productivity</span>
+            <span class="value">Sustainable data-sharing policies can be designed without penalizing original teams</span>
           </li>
         </ul>
         <div class="paper-links">
@@ -235,57 +212,21 @@
     <div class="highlight-grid">
 
       <div class="highlight-visual">
-        <p class="vis-label">2011 DOJ intervention: Novell patent transfer</p>
-        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Antitrust intervention diagram">
+        <p class="vis-label">Synthetic control evidence on follow-on innovation</p>
 
-          <!-- Novell source box -->
-          <rect x="180" y="40" width="140" height="44" rx="6" fill="#FBFAF7" stroke="#161513" stroke-width="1"/>
-          <text x="250" y="60" font-family="Newsreader, serif" font-size="14" fill="#161513" text-anchor="middle" font-weight="500">Novell patents</text>
-          <text x="250" y="75" font-family="'Geist Mono', monospace" font-size="9" fill="#6E6A63" text-anchor="middle" letter-spacing="0.05em">SOFTWARE PORTFOLIO</text>
-
-          <!-- DOJ intervention badge -->
-          <g transform="translate(360, 105)">
-            <rect x="0" y="0" width="100" height="32" rx="16" fill="#2147D9"/>
-            <text x="50" y="20" font-family="'Geist Mono', monospace" font-size="10" fill="#fff" text-anchor="middle" font-weight="600" letter-spacing="0.08em">DOJ 2011</text>
-          </g>
-
-          <!-- Arrow with red X (blocked transfer) -->
-          <line x1="250" y1="90" x2="250" y2="135" stroke="#161513" stroke-width="1.5"/>
-          <g transform="translate(250, 145)">
-            <circle cx="0" cy="0" r="18" fill="#fff" stroke="#DC3838" stroke-width="2"/>
-            <line x1="-9" y1="-9" x2="9" y2="9" stroke="#DC3838" stroke-width="2.5"/>
-            <line x1="-9" y1="9" x2="9" y2="-9" stroke="#DC3838" stroke-width="2.5"/>
-          </g>
-          <text x="285" y="150" font-family="'Geist Mono', monospace" font-size="10" fill="#DC3838" font-weight="600" letter-spacing="0.05em">CONSOLIDATION BLOCKED</text>
-
-          <!-- 4 acquirers (greyed out) -->
-          <line x1="250" y1="163" x2="250" y2="180" stroke="#A09C92" stroke-width="1" stroke-dasharray="2,3"/>
-          <g transform="translate(80, 185)">
-            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
-            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Microsoft</text>
-          </g>
-          <g transform="translate(180, 185)">
-            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
-            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Oracle</text>
-          </g>
-          <g transform="translate(280, 185)">
-            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
-            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">EMC</text>
-          </g>
-          <g transform="translate(380, 185)">
-            <rect x="0" y="0" width="80" height="36" rx="6" fill="#F4F2EC" stroke="#D4D0C4" stroke-width="0.5"/>
-            <text x="40" y="22" font-family="Geist, sans-serif" font-size="12" fill="#6E6A63" text-anchor="middle">Apple</text>
-          </g>
-
-          <!-- Outcome arrow -->
-          <line x1="250" y1="235" x2="250" y2="265" stroke="#2147D9" stroke-width="2"/>
-          <polygon points="250,275 244,265 256,265" fill="#2147D9"/>
-
-          <!-- Outcome result -->
-          <rect x="80" y="285" width="340" height="50" rx="8" fill="#E8EDFD" stroke="#2147D9" stroke-width="0.5"/>
-          <text x="250" y="307" font-family="Newsreader, serif" font-size="15" fill="#1933A8" text-anchor="middle" font-weight="500">Competitors&rsquo; follow-on innovation ↑</text>
-          <text x="250" y="324" font-family="'Geist Mono', monospace" font-size="10" fill="#1933A8" text-anchor="middle" letter-spacing="0.05em">SYNTHETIC CONTROL EVIDENCE</text>
-        </svg>
+        <img class="paper-fig"
+             src="assets/images/figures/fig_antitrust_synthetic_control.png"
+             alt="Four-panel synthetic control results: regulated vs control, treatment effect, placebo, p-value"
+             loading="lazy">
+        <p class="fig-caption">
+          <strong>Synthetic control results.</strong>
+          <em>Top-left:</em> follow-on citations (PostCiteOIN) for the regulated
+          group rise above the synthetic counterfactual after the 2011
+          intervention. <em>Top-right:</em> the average treatment effect grows
+          steadily over four post-intervention years. <em>Bottom:</em> placebo
+          tests against ~500 alternative units &mdash; the observed effect lies
+          in the tail of the placebo distribution (<strong>p&nbsp;=&nbsp;0.02</strong>).
+        </p>
       </div>
 
       <div class="highlight-content">
@@ -295,7 +236,7 @@
         </div>
         <h2>Can antitrust law enforcement spur innovation? Antitrust regulation of patent consolidation and its impact on follow-on innovations</h2>
         <p class="question">
-          When a firm consolidates patents covering substitute technologies, it can choke off competitors&rsquo; follow-on innovation. Can antitrust law &mdash; serve as a tool for innovation policy?
+          When a firm consolidates patents covering substitute technologies, it can choke off competitors&rsquo; follow-on innovation. Can antitrust law &mdash; usually framed in terms of consumer prices &mdash; serve as a tool for innovation policy?
         </p>
         <ul class="findings">
           <li>
@@ -331,49 +272,46 @@
     <div class="highlight-grid">
 
       <div class="highlight-visual">
-        <p class="vis-label">Emerging tech content vs citation impact</p>
-        <svg viewBox="0 0 500 360" xmlns="http://www.w3.org/2000/svg" aria-label="Positive relationship between emerging ideas and citation impact">
+        <p class="vis-label">Bibliometric evidence across three emerging domains</p>
 
-          <!-- Axes -->
-          <line x1="60" y1="60" x2="60" y2="290" stroke="#161513" stroke-width="1"/>
-          <line x1="60" y1="290" x2="460" y2="290" stroke="#161513" stroke-width="1"/>
+        <div class="fig-grid-2">
+          <div>
+            <img class="paper-fig"
+                 src="assets/images/figures/fig_emerging_correlations.png"
+                 alt="Pairwise correlations between IES and IFWD across NEDD, SynBio, AutoV"
+                 loading="lazy">
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); text-align: center; margin: 0.5rem 0 0;">IES–IFWD correlations</p>
+          </div>
+          <div>
+            <img class="paper-fig"
+                 src="assets/images/figures/fig_emerging_dist_nedd.png"
+                 alt="IFWD distribution for NEDD"
+                 loading="lazy">
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); text-align: center; margin: 0.5rem 0 0;">NEDD &mdash; IFWD distribution</p>
+          </div>
+          <div>
+            <img class="paper-fig"
+                 src="assets/images/figures/fig_emerging_dist_synbio.png"
+                 alt="IFWD distribution for synthetic biology"
+                 loading="lazy">
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); text-align: center; margin: 0.5rem 0 0;">SynBio &mdash; IFWD distribution</p>
+          </div>
+          <div>
+            <img class="paper-fig"
+                 src="assets/images/figures/fig_emerging_dist_autov.png"
+                 alt="IFWD distribution for autonomous vehicles"
+                 loading="lazy">
+            <p style="font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); text-align: center; margin: 0.5rem 0 0;">AutoV &mdash; IFWD distribution</p>
+          </div>
+        </div>
 
-          <!-- Axis labels -->
-          <text x="35" y="175" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" transform="rotate(-90, 35, 175)" text-anchor="middle" letter-spacing="0.08em">CITATION IMPACT</text>
-          <text x="260" y="315" font-family="'Geist Mono', monospace" font-size="10" fill="#6E6A63" text-anchor="middle" letter-spacing="0.08em">EMERGING IDEA CONTENT &rarr;</text>
-
-          <!-- Tick marks Y -->
-          <line x1="55" y1="250" x2="60" y2="250" stroke="#6E6A63" stroke-width="0.5"/>
-          <text x="50" y="254" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="end">low</text>
-          <line x1="55" y1="100" x2="60" y2="100" stroke="#6E6A63" stroke-width="0.5"/>
-          <text x="50" y="104" font-family="'Geist Mono', monospace" font-size="9" fill="#A09C92" text-anchor="end">high</text>
-
-          <!-- Data scatter points + trend (Nano-Enabled Drug Delivery) -->
-          <circle cx="95" cy="252" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="125" cy="240" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="155" cy="225" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="185" cy="210" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="215" cy="195" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="245" cy="178" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="275" cy="160" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="305" cy="148" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="335" cy="135" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="365" cy="118" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="395" cy="103" r="4" fill="#2147D9" fill-opacity="0.7"/>
-          <circle cx="425" cy="92" r="4" fill="#2147D9" fill-opacity="0.7"/>
-
-          <!-- Trend line -->
-          <line x1="80" y1="260" x2="440" y2="85" stroke="#2147D9" stroke-width="2" stroke-dasharray="0"/>
-
-          <!-- Three domains tag -->
-          <g transform="translate(85, 80)">
-            <text x="0" y="0" font-family="'Geist Mono', monospace" font-size="9" fill="#6E6A63" letter-spacing="0.08em">DOMAINS ANALYZED:</text>
-            <text x="0" y="16" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Nano-enabled drug delivery</text>
-            <text x="0" y="30" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Synthetic biology</text>
-            <text x="0" y="44" font-family="Geist, sans-serif" font-size="11" fill="#161513">• Autonomous vehicles</text>
-          </g>
-
-        </svg>
+        <p class="fig-caption" style="margin-top: 1.25rem;">
+          <strong>Top-left:</strong> positive IES&ndash;IFWD correlations across all
+          three domains. <strong>Other panels:</strong> in each field, papers
+          with higher emerging-idea content (red) sit visibly to the right of
+          the comparison distribution (blue) &mdash; the relationship is not
+          driven by outliers.
+        </p>
       </div>
 
       <div class="highlight-content">

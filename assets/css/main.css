@@ -59,7 +59,7 @@ body {
   font-weight: 400;
   /* MASTER FONT SIZE: change this to scale all text up/down.
      17 = compact, 18 = balanced, 19 = comfortable (current), 20 = large */
-  font-size: 22px;
+  font-size: 19px;
   line-height: 1.65;
   color: var(--ink);
   background: var(--bg);
@@ -767,6 +767,41 @@ nav.primary a.is-active::after {
   color: var(--ink-faint);
   margin-bottom: 1rem;
   font-weight: 500;
+}
+
+/* ---- Real paper figures ---- */
+.paper-fig {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.paper-fig + .paper-fig {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--line);
+}
+.fig-caption {
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--line);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.fig-caption strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.fig-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .fig-grid-2 { grid-template-columns: 1fr; }
 }
 
 .highlight-content .venue-line {
