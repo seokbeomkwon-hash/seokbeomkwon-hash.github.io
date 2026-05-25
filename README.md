@@ -4,7 +4,7 @@ A modern, editorial-style academic homepage. Built with plain HTML, CSS, and a t
 
 ---
 
-## What's in here1
+## What's in here
 ```
 site/
 ├── index.html              ← Home (hero, research, updates, recruit CTA)
