@@ -23,6 +23,11 @@
   --accent-deep:  #1933A8;
   --accent-soft:  #E8EDFD;
 
+  /* Secondary accent for top general venues (Science, Nature) */
+  --brick:        #A8322B;
+  --brick-deep:   #7D241E;
+  --brick-soft:   #F7E8E6;
+
   --line:         #E8E5DD;
   --line-strong:  #D4D0C4;
 
@@ -344,10 +349,10 @@ nav.primary a.is-active::after {
 
 .hero-photo {
   aspect-ratio: 4 / 5;
-  background: var(--bg-tint);
+  background: transparent;
   border-radius: var(--radius-lg);
-  border: 0.5px solid var(--line);
-  overflow: hidden;
+  border: 0;
+  overflow: visible;
   position: relative;
   display: flex;
   align-items: center;
@@ -357,7 +362,8 @@ nav.primary a.is-active::after {
 .hero-photo img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 .hero-photo .placeholder {
   text-align: center;
@@ -538,6 +544,10 @@ nav.primary a.is-active::after {
 }
 .pub-list .venue.tier-1 {
   color: var(--accent);
+}
+.pub-list .venue.tier-top {
+  color: var(--brick);
+  font-weight: 600;
 }
 .pub-list .title {
   font-size: 17.5px;
@@ -824,6 +834,10 @@ nav.primary a.is-active::after {
 }
 .highlight-content .venue-badge.tier-1 {
   background: var(--accent);
+  color: #fff;
+}
+.highlight-content .venue-badge.tier-top {
+  background: var(--brick);
   color: #fff;
 }
 .highlight-content .meta-text {
