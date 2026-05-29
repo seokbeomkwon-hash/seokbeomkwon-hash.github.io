@@ -14,6 +14,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="assets/css/main.css">
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L2XVXZM9NM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L2XVXZM9NM');
+</script>
 </head>
 <body>
 
@@ -58,7 +66,7 @@
         </p>
 
         <p class="lead" style="margin-top: 1.5rem;">
-          I study how policy and incentives shape the production of science and technology.
+          I study how policy shape the production of science and technology.
         </p>
 
         <div class="featured-pub" style="margin-top: 1.5rem;">
@@ -97,9 +105,31 @@
         </div>
       </div>
 
-      <div class="hero-photo reveal" style="transition-delay: 80ms;">
-        <img src="assets/images/wordcloud.png" alt="Word cloud of recent research topics: science, data, innovation, policy, patent, AI, university, competition, knowledge, antitrust, emerging technology" loading="eager">
-        <p style="position: absolute; bottom: -28px; left: 0; right: 0; text-align: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; color: var(--ink-faint); margin: 0;">RECENT RESEARCH, IN WORDS</p>
+      <div class="hero-keywords reveal" style="transition-delay: 80ms;" aria-label="Research keywords: science, innovation, data, patent, policy, AI, competition, knowledge, antitrust, government, emerging technology, quantum, nanomedicine, interdisciplinary, funding, bibliometrics">
+        <p class="kw-label">Research keywords</p>
+
+        <div class="kw-big">
+          <span style="color: #4A6B82;">science</span>
+        </div>
+        <div class="kw-big">
+          <span style="color: #6E8862;">innovation</span>
+        </div>
+        <div class="kw-big">
+          <span style="color: #B07058;">data</span><span class="kw-comma">,</span> <span style="color: #A88450;">patent</span>
+        </div>
+
+        <p class="kw-mid">
+          <span style="color: #876A93;">policy</span>,
+          <span style="color: #4A6B82;">competition</span>,
+          <span style="color: #B07058;">AI</span>,
+          <span style="color: #A88450;">government</span>,
+          <span style="color: #6E8862;">knowledge</span>,
+          <span style="color: #876A93;">antitrust</span>
+        </p>
+
+        <p class="kw-small">
+          emerging tech &middot; quantum &middot; nanomedicine &middot; interdisciplinary &middot; funding &middot; bibliometrics
+        </p>
       </div>
     </div>
   </section>
